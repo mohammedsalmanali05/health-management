@@ -1,0 +1,160 @@
+nav {
+    background-color: #f2f2f2;
+    color: white;
+    padding: 10px;  
+  }
+  header {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      height: 120px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      align-items: center; /* Center items vertically */
+      justify-content: space-between; /* Space items apart horizontally */
+      background-color: #f2f2f2; /* Set background color for the header */
+    }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align the links to the right */
+  }
+  
+  li {
+    margin-left: 20px; /* Adjust margin to create space between links */
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Add a border-bottom to the link when hovering */
+  .menu a {
+    text-decoration: none;
+    color: #272727;
+    padding: 5px;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .menu a:hover {
+    border-bottom: 2px solid #fff8a3;
+  }
+  
+  
+  /* Styles for mainstage images */
+.mainstage.v3 .main > picture img {
+  top: 100%;
+  transform: translate(-50%, -100%);
+}
+
+/* Styles for section images */
+section picture img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  min-height: calc(100% + 1px);
+  object-fit: cover;
+}
+
+/* Styles for images, videos, and sources */
+img, video, source {
+  opacity: 1;
+  transition: opacity .3s ease 0s;
+}
+
+/* Styles for maximum image width */
+img {
+  max-width: 100%;
+}
+
+/* Additional styles for images */
+img {
+  border: none;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+}
+
+/* Box-sizing for all elements */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  font-size: 100%;
+  font-weight: 400;
+  font-family: 'Verdana', 'Arial', sans-serif;
+  line-height: 1.88;
+  color: #54565a;
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Media query for adjusting font size based on screen width */
+@media screen and (max-width: 1600px) {
+  html {
+      font-size: calc(15px + (18 - 15) * ((100vw - 1281px) / (1600 - 1281)));
+  }
+}
+
+/* Additional HTML styles */
+html {
+  font-size: calc(15px + (18 - 15) * ((100vw - 1601px) / (1920 - 1601)));
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+/* Box-sizing for all elements */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: flex;
+  margin-right: 20px; /* Add spacing between navigation items */
+  
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Align the links to the right */
+}
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+li {
+  margin-left: 20px; /* Adjust margin to create space between links */
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
